@@ -1,0 +1,92 @@
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#header {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  /*font-size: 10px;*/
+  margin: 30px;
+}
+
+
+.col-content {
+  border: 1px solid black;
+  background-color: gray;
+  margin: 10px;
+  padding: 10px;
+  overflow: auto;
+  position: relative;
+}
+
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  /*font-size: 10px;*/
+  border: 1px solid white;  
+  padding: 5px 25px 5px 25px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#header-1 {
+  background-color: yellow;
+  color: red;
+}
+
+#header-2 {
+  background-color: black;
+  color: beige;
+}
+
+#header-3 {
+  background-color: black;
+  color: orange;
+}
+
+p {
+  margin-top: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  /*font-size: 10px;*/
+  color: white;
+}
+
+
+/********** Large devices only **********/
+@media (min-width: 992px) {
+  #col-1, #col-2, #col-3 {
+    float: left;
+    position: relative;
+  }
+  #col-1, #col-2, #col-3 {
+    width: 33.33%;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  #col-1, #col-2, #col-3 {
+    float: left;
+    position: relative;
+  }
+  #col-1, #col-2 {
+    width: 50%;
+  }
+  #col-3 {
+    width: 100%;
+  }
+}
+
+/********** Small devices only **********/
+@media (max-width: 767px) {
+  #col-1, #col-2, #col-3 {
+    float: left;
+    position: relative;
+  }
+  #col-1, #col-2, #col-3 {
+    width: 100%;
+  }
+}
